@@ -1,0 +1,169 @@
+
+
+for(i=0;i<size-1;i++)
+{
+	if(strcmp(arrayEmployee[i].lastName,strcmp(arrayEmployee[i+1].lastName)>0)
+	{
+		pId = arrayEmployee[i].idEmployee;
+		strcpy(pName, arraEmployee[i].name);
+		strcpy(pLname, arraEmployee[i].lastName);
+		pSalary = arrayEmployee[i].salary;
+		pSector = arrayEmployee[i].sector;
+		pIsEmpty = arrayEmployee[i].isEmpty;
+		////////////////////////////////// swap X step 1
+		arrayEmployee[i].idEmployee = arrayEmployee[i+1].idEmployee;
+		strcpy(pName, arraEmployee[i].name);
+		strcpy(pLname, arraEmployee[i].lastName);
+		arrayEmployee[i].salary = arrayEmployee[i+1].salary;
+		arrayEmployee[i].sector = arrayEmployee[i+1].sector;
+		arrayEmployee[i].isEmpty = arrayEmployee[i+1].isEmpty;
+		////////////////////////////////// swap X step 2
+		arrayEmployee[i+1].idEmployee = pId;
+		strcpy(arraEmployee[i+1].name, pName);
+		strcpy(arraEmployee[i+1].lastName, pLname);
+		arrayEmployee[i+1].salary = pSalary;
+		arrayEmployee[i+1].sector = pSector;
+		arrayEmployee[i+1].isEmpty = pIsEmpty;
+		////////////////////////////////// swap X step 3
+	}	
+	if(strcmp(arrayEmployee[i].lastName, arrayEmployee[i+1].lastName)==0)
+	{
+		if(arrayEmployee[i].sector > arrayEmployee[i+1].sector)
+		{
+			pId = arrayEmployee[i].idEmployee;
+			strcpy(pName, arraEmployee[i].name);
+			strcpy(pLname, arraEmployee[i].lastName);
+			pSalary = arrayEmployee[i].salary;
+			pSector = arrayEmployee[i].sector;
+			pIsEmpty = arrayEmployee[i].isEmpty;
+			////////////////////////////////// swap X step 1
+			arrayEmployee[i].idEmployee = arrayEmployee[i+1].idEmployee;
+			strcpy(pName, arraEmployee[i].name);
+			strcpy(pLname, arraEmployee[i].lastName);
+			arrayEmployee[i].salary = arrayEmployee[i+1].salary;
+			arrayEmployee[i].sector = arrayEmployee[i+1].sector;
+			arrayEmployee[i].isEmpty = arrayEmployee[i+1].isEmpty;
+			////////////////////////////////// swap X step 2
+			arrayEmployee[i+1].idEmployee = pId;
+			strcpy(arraEmployee[i+1].name, pName);
+			strcpy(arraEmployee[i+1].lastName, pLname);
+			arrayEmployee[i+1].salary = pSalary;
+			arrayEmployee[i+1].sector = pSector;
+			arrayEmployee[i+1].isEmpty = pIsEmpty;
+			////////////////////////////////// swap X step 3
+		}
+	}
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+int publicacion_ordenarPorString(ePublicacion array[],int size)                              //cambiar fantasma
+{
+    int retorno=-1;
+    int i, j;
+    int bufferIdPublicacion;
+    int bufferIsEmpty;
+    int bufferDiasPublicacion;
+    int bufferidPantalla;
+    char bufferCUIT[TEXT_SIZE];
+    char bufferNombreVideo[TEXT_SIZE];
+    float bufferPrecio;
+
+    if(array!=NULL && size>=0)
+    {
+        for (i = 1; i < size; i++)
+        {
+            strcpy(bufferNombreVideo,array[i].nombreArchivo);
+            strcpy(bufferCUIT,array[i].cuit);
+            bufferIsEmpty=array[i].isEmpty;
+            bufferidPantalla=array[i].idPantalla;
+            bufferDiasPublicacion=array[i].diasPublicacion;
+            bufferIdPublicacion=array[i].idPublicacion;
+
+            j = i - 1;
+
+            while ((j >= 0) && strcmp(bufferCUIT,array[j].cuit)<0)         //cambiar campo varString                 //Si tiene mas de un criterio se lo agrego, Ej. bufferInt<array[j].varInt
+            {                                                                                                               //buffer < campo ascendente   buffer > campo descendente
+                    strcpy(array[j + 1].cuit,array[j].cuit);          //cambiar campo varString
+                    strcpy(array[j + 1].nombreArchivo,array[j].nombreArchivo);          //cambiar campo varString
+                    array[j + 1].idPantalla=array[j].idPantalla;                                //cambiar campo id
+                    array[j + 1].isEmpty=array[j].isEmpty;
+                    array[j + 1].diasPublicacion=array[j].diasPublicacion;
+                    array[j + 1].idPublicacion=array[j].idPublicacion;
+
+                    j--;
+            }
+
+
+                strcpy(array[j + 1].cuit,bufferCUIT);          //cambiar campo varString
+                strcpy(array[j + 1].nombreArchivo,bufferNombreVideo);          //cambiar campo varString
+                array[j + 1].idPantalla=bufferidPantalla;                                //cambiar campo id
+                array[j + 1].isEmpty=bufferIsEmpty;                                //cambiar campo id
+                array[j + 1].diasPublicacion=bufferDiasPublicacion;
+                array[j + 1].idPublicacion=bufferIdPublicacion;
+
+        }
+        retorno=0;
+    }
+    return retorno;
+}
+
+
+
+
+void bubleSort(int array[], int size)
+{
+	int i,j;
+	int auxiliar;
+	for(i = 0; i < size - 1; i++)
+	{
+	        for(j = i + 1; j < size; j++)
+        	{
+            		if(array[i] > array[j])
+            		{
+                		auxiliar = array[i];
+                		array[i] = array[j];
+                		array[j] = auxiliar;
+            		}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

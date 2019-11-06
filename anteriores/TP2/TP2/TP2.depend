@@ -1,0 +1,151 @@
+# depslib dependency file v1.0
+1569422745 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1569592288 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569422864 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\menu.h
+
+1569587769 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\arrayfunctions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayFunctions.h"
+
+1569508418 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\validations.h
+
+1569585780 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\arrayfunctions.h
+
+1569589471 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569592375 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569591970 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\arrayemployees.h
+
+1570212093 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570217706 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\menu.h
+
+1570217706 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\validations.h
+
+1570535554 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\arrayemployees.h
+
+1570217706 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1570211565 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570217706 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569422746 source:c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1569422866 c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\menu.h
+
+1570045836 source:c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569682124 c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\validations.h
+
+1570047392 c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\arrayemployees.h
+
+1569601360 source:c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570188741 source:c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570217706 source:c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570217706 c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\menu.h
+
+1570217706 c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\validations.h
+
+1570217706 c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\arrayemployees.h
+
+1570217706 source:c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1570217706 source:c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570217706 source:c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+

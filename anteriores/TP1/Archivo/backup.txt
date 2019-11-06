@@ -1,0 +1,48 @@
+switch (option)
+{
+case 1:
+float getNumber();
+break;
+case 2:
+float getNumber();
+break;
+case 3:
+float getCalc()
+break;
+case 4:
+float getResult()
+break;
+case 5:
+float getOut()
+break;
+}
+
+(1 número/0 letra)
+float getFloat()
+int auxOp,i;
+
+printf("Ingresé un operando:");
+scanf("%f",&auxOp);
+int valid = scanf("%d",&numero);
+for (i=0; <loop;i++)
+{
+if(validacion !=1) 
+{ 
+printf("Número inválido.");
+printf("Ingresé un operando:");
+scanf("%f",&auxOp);
+}
+
+getSuma(float *auxOpA, float *auxOpB, float *resultAdd)
+{
+Int fail=0;
+float opA = *auxOpA;
+float opB = *auxOpB;
+float resAdd = *resultAdd;
+
+resAdd = opA+opB;
+ *resultAdd=resAdd;
+
+return 0;
+}
+

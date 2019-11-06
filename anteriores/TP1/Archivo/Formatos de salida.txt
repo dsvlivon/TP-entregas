@@ -1,0 +1,15 @@
+%c	un char (caracter)
+%d	un entero con signo en notación de base decimal
+%i	un entero con signo
+%e	reales((pseudoreales como double)) en notación científica indicando el exponente con "e"
+%E	reales((pseudoreales como double)) en notación científica indicando el exponente con "E"
+%f	formato de punto flotante
+%g	la opción más corta entre "%e" y "%f"
+%G	la opción más corta entre "%E" y "%F"
+%o	un entero sin signo en notación de base octal
+%s	una cadena de caracteres
+%u	un entero sin signo
+%x	un entero sin signo en notación de base hexadecimal, usando minúsculas para los dígitos extendidos
+%X	un entero sin signo en notación de base hexadecimal, usando mayúsculas para los dígitos extendidos
+%p	un puntero
+%n	un puntero a un entero en el cual se deposita la cantidad de caracteres escritos hasta el momento

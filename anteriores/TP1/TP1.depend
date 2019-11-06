@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1567369615 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\nueva carpeta\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1567369273 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\nueva carpeta\tp1\src\menu.c
+	"menu.h"
+
+1567368943 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\nueva carpeta\tp1\include\menu.h
+
+1567604108 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp1v2.0\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1567606016 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp1v2.0\tp1\functions.h
+
+1567701192 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp1v2.0\tp1\functions.c
+	<stdio.h>
+	<stdlib.h>
+	"functions.h"
+	"validation.h"
+
+1567695490 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp1v2.0\tp1\validation.h
+
+1567697810 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp1v2.0\tp1\validation.c
+	<stdio.h>
+	<stdlib.h>
+	"validation.h"
+
+1567700179 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp1v2.0\tp1\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+	"functions.h"
+	"validation.h"
+
+1567529092 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp1v2.0\tp1\menu.h
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+	"functions.h"
+	"validation.h"
+
