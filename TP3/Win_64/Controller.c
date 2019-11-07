@@ -22,7 +22,7 @@
 ////////////////////////////////////////////////////////////////////////////////// LOAD CSV
 int controller_loadFromText(char* path , LinkedList* pArrayListEmployee){
     int auxReturn =0;
-    FILE* pFileTxt;
+    FILE* pFileTxt=NULL;
     pFileTxt = fopen(path, "r");
 
     if(pFileTxt != NULL)
@@ -37,17 +37,13 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee){
 }
 ////////////////////////////////////////////////////////////////////////////////// LOAD BIN
 int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee){
-    int auxReturn =0;
-    FILE* pFileBin;
-    pFileBin = fopen(path, "rb");
+    int auxReturn=-1;
+    FILE* pFileBin= NULL;
 
-    if(pFileBin != NULL)
+    if(path!= NULL && pArrayListEmployee!=NULL)
     {
-        parser_EmployeeFromBinary(pFileBin, pArrayListEmployee);
-    }
-    else
-    {
-        auxReturn= -1;
+        pFileBin = fopen(path, "rb");
+        auxReturn = parser_EmployeeFromBinary(pFileBin, pArrayListEmployee);
     }
     return auxReturn;
 }
@@ -62,27 +58,25 @@ int controller_addEmployee(LinkedList* pArrayListEmployee){
         if(pArrayListEmployee!=NULL)
         {
             //printf("\nMENU ORDENAMIENTO: \n1) Ordenar por Nombre. \n2) Ordenar por sueldo. \n3) Ordenar por Horas trabajadas.");
-            printf("\nALTA DE EMPLEADO.\n");
+            printf("\nALTA DE EMPLEADO.");
             printf("\n/////////////////////////////////////\n");
-            if(getInput(var2, "\n\nIngrese el nombre: ","\nIngreso invalido!",0,50,2,3) == 0)
+            if(getInput(var2, "\nIngrese el nombre: ","\nIngreso invalido!",0,50,2,3) == 0)
             {
                 //strcpy(var2, aux);
                 //var1 = atoi(aux);
-                auxReturn=0;
+                auxReturn = 0;
             }
             else
                 printf(FAIL_ADD);
             if(auxReturn==0)
             {
-                auxReturn= getInput(var3, "\n\nIngrese las Horas Trabajadas: ","\nIngreso invalido!",0,1100,2,1);
-                //strcpy(var3, aux);
-
+               auxReturn = getInput(var3, "\nIngrese las Horas Trabajadas: ","\nIngreso invalido!",0,1100,2,1);
             }
              else
                 printf(FAIL_ADD);
             if(auxReturn==0)
             {
-                auxReturn= getInput(var4, "\n\nIngrese el sueldo: ","\nIngreso invalido!",0,999999,2,1);
+                auxReturn= getInput(var4, "\nIngrese el sueldo: ","\nIngreso invalido!",0,999999,2,1);
                 //strcpy(var4, aux);
             }
              else
@@ -90,15 +84,14 @@ int controller_addEmployee(LinkedList* pArrayListEmployee){
             printf("\n/////////////////////////////////////\n");
             if(auxReturn==0)
             {
-                //printf("ID: %d\n", var1);
                 //printf("Nombre: %s\n", var2);
                 //printf("Horas: %s\n", var3);
-                //printf("Sueldo: %s\n", var4);
+                //jonprintf("Sueldo: %s\n", var4);
                 pxEmployee = employee_newParametros("-1",var2,var3,var4);
                 if(pxEmployee!=NULL)
-               {
+                {
                    ll_add(pArrayListEmployee, pxEmployee);
-               }
+                }
             }
             else
                 printf(FAIL_ADD);
@@ -108,7 +101,7 @@ int controller_addEmployee(LinkedList* pArrayListEmployee){
 ////////////////////////////////////////////////////////////////////////////////// EDIT
 int controller_editEmployee(LinkedList* pArrayListEmployee){
     int auxReturn=-1;
-    Employee* pxEmployee;
+    Employee* pxEmployee=NULL;
     char aux[50];
     char auxNombre[50];
     int auxSueldo,auxHoras;
@@ -118,7 +111,8 @@ int controller_editEmployee(LinkedList* pArrayListEmployee){
 
     if(pArrayListEmployee!=NULL)
     {
-        printf("\nMENU MODIFICACION DE EMPLEADO: \n");
+        printf("\nMENU MODIFICACION DE EMPLEADO.");
+        printf("\n/////////////////////////////////////\n");
         if(getInput(aux, "\n\nIngrese el ID: ","\nIngreso invalido!",0,9999,2,1) == 0)
         {
             auxId=atoi(aux);
@@ -147,7 +141,6 @@ int controller_editEmployee(LinkedList* pArrayListEmployee){
             if(auxReturn == 0)
             {
                 option = atoi(aux);
-                printf("\n/////////////////////////////////////\n");
                 if(option==1)
                 {
                     if(getInput(aux, "\n\nIngrese el nombre: ","\nIngreso invalido!",0,50,2,3) == 0)
@@ -186,7 +179,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee){
     int pIndex,auxId;
     char aux[50];
     char auxNombre[50];
-    Employee* pxEmployee;
+    Employee* pxEmployee=NULL;
 
     if(pArrayListEmployee!=NULL)
     {
@@ -229,7 +222,7 @@ int controller_listEmployee(LinkedList* pArrayListEmployee){
     int len,i;
     int auxHoras, auxId, auxSueldo;
     char auxNombre[50];
-    Employee* auxEmployee;
+    Employee* auxEmployee=NULL;
 
     if(pArrayListEmployee != NULL)
     {
@@ -241,10 +234,9 @@ int controller_listEmployee(LinkedList* pArrayListEmployee){
             employee_getId(auxEmployee,&auxId);
             employee_getSueldo(auxEmployee,&auxSueldo);
             employee_getHorasTrabajadas(auxEmployee,&auxHoras);
-            if(auxId!=0)
-            {
-                printf("Id: %d      Nombre: %s      Horas:%d        Sueldo: %d\n",auxId,auxNombre,auxHoras,auxSueldo);
-            }
+
+            printf("Id: %d      Nombre: %s      Horas:%d        Sueldo: %d\n",auxId,auxNombre,auxHoras,auxSueldo);
+
         }
         auxReturn = 0;
     }
@@ -295,17 +287,18 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee){
 ////////////////////////////////////////////////////////////////////////////////// SAVE CSV
 int controller_saveAsText(char* path , LinkedList* pArrayListEmployee){
     int auxReturn =0;
-    int i;
+    int i,xLen=0;
     int auxHoras, auxId, auxSueldo;
     char auxNombre[50];
-    FILE* pFileTxt;
+    FILE* pFileTxt=NULL;
     pFileTxt = fopen(path, "w");
-    Employee* pxEmployee;
+    Employee* pxEmployee=NULL;
 
     if(pArrayListEmployee!=NULL)
     {
         if(pFileTxt != NULL)
         {
+            xLen = ll_len(pArrayListEmployee);
             for(i=0; i<ll_len(pArrayListEmployee);i++)
             {
                 pxEmployee = ll_get(pArrayListEmployee,i);
@@ -314,10 +307,7 @@ int controller_saveAsText(char* path , LinkedList* pArrayListEmployee){
                 employee_getId(pxEmployee,&auxId);
                 employee_getSueldo(pxEmployee,&auxSueldo);
                 employee_getHorasTrabajadas(pxEmployee,&auxHoras);
-                if(auxId!=0)
-                {
-                    fprintf(pFileTxt,"%d,%s,%d,%d\n",auxId,auxNombre,auxHoras,auxSueldo);
-                }
+                fprintf(pFileTxt,"%d,%s,%d,%d\n",auxId,auxNombre,auxHoras,auxSueldo);
             }
         }
         else
@@ -325,7 +315,10 @@ int controller_saveAsText(char* path , LinkedList* pArrayListEmployee){
         fclose(pFileTxt);
         printf("\n/////////////////////////////////////\n");
         if(auxReturn==0)
+        {
             printf("EL ARCHIVO SE GUARDO CON EXITO.");
+            printf("\nSe guardaron : %d empleados.", xLen);
+        }
         else
         {
             printf("EL ARCHIVO NO SE PUDO GUARDAR.");
@@ -339,30 +332,45 @@ int controller_saveAsText(char* path , LinkedList* pArrayListEmployee){
 ////////////////////////////////////////////////////////////////////////////////// SAVE BIN
 int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee){
     int auxReturn =-1;
-    int i;
-    FILE* pFileBin;
-    pFileBin = fopen(path, "wb");
-    Employee* pxEmployee;
+    int i,xLen=0;
+    /*int auxHoras, auxId, auxSueldo;
+    char auxNombre[50];*/
+    FILE* pFileBin=NULL;
+    Employee* pxEmployee=NULL;
 
-    if(pArrayListEmployee!=NULL)
+    if(pArrayListEmployee!=NULL && path!=NULL)
     {
+        pFileBin = fopen(path, "wb");
+        xLen = ll_len(pArrayListEmployee);
         //printf("OK 1");
         if(pFileBin != NULL)
         {
             //printf("OK 2");
-            for(i=0; i<ll_len(pArrayListEmployee);i++)
+            for(i=0; i<xLen;i++)
             {
-                pxEmployee = ll_get(pArrayListEmployee,i);
-                fwrite(pxEmployee,sizeof(Employee),1,pFileBin);
+                pxEmployee = (Employee*)ll_get(pArrayListEmployee,i);
+                /*employee_getNombre(pxEmployee,auxNombre);
+                employee_getId(pxEmployee,&auxId);
+                employee_getSueldo(pxEmployee,&auxSueldo);
+                employee_getHorasTrabajadas(pxEmployee,&auxHoras);
+                //printf("OK 3");
+                printf("Id: %d      Nombre: %s      Horas:%d        Sueldo: %d\n",auxId,auxNombre,auxHoras,auxSueldo);*/
+                if(pxEmployee!=NULL)
+                {
+                    fwrite(pxEmployee,sizeof(Employee),1,pFileBin);
+                    auxReturn=0;
+                }
             }
-            auxReturn=0;
+            fclose(pFileBin);
         }
         else
             auxReturn=-1;
-
         printf("\n/////////////////////////////////////\n");
         if(auxReturn==0)
+        {
             printf("EL ARCHIVO SE GUARDO CON EXITO.");
+            printf("\nSe guardaron : %d empleados.", xLen);
+        }
         else
         {
             printf("EL ARCHIVO NO SE PUDO GUARDAR.");
@@ -377,7 +385,7 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee){
 int controller_findEmployeeById(LinkedList* pArrayListEmployee, int id){
     int auxReturn = -1;
     int i,auxId,len;
-    Employee* pxEmployee;
+    Employee* pxEmployee=NULL;
 
     if( pArrayListEmployee != NULL)
     {

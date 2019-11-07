@@ -14,18 +14,21 @@
 int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee){
     int auxReturn = -1;
     int r= 0;
+    int employeeCount=0;
     char var1[50],var3[50],var2[50],var4[50];
-    Employee* pEmployee;
+    Employee* pxEmployee =NULL;
 
+    r = fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",var1,var2,var3,var4);
     do
     {
         r = fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",var1,var2,var3,var4);
         if(r==4)
         {
-            pEmployee = employee_newParametros(var1,var2,var3,var4);
-            if(pEmployee!=NULL)
+            pxEmployee = employee_newParametros(var1,var2,var3,var4);
+            if(pxEmployee!=NULL)
             {
-                ll_add(pArrayListEmployee,pEmployee);
+                ll_add(pArrayListEmployee,pxEmployee);
+                employeeCount++;
                 auxReturn=0;
             }
             else
@@ -43,7 +46,11 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee){
     fclose(pFile);
     printf("\n////////////////////////\n");
     if(auxReturn==0)
+    {
         printf("CARGA DE DATOS EXITOSA.");
+        printf("\nSe cargaron %d empleados.", employeeCount);
+    }
+
     else
     {
         printf("CARGA DE DATOS FALLIDA.");
@@ -54,30 +61,52 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee){
 ////////////////////////////////////////////////////////////////////////////////// PARSER BIN
 int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee){
     int auxReturn=-1;
-    Employee* pEmployee;
+    Employee* pxEmployee=NULL;
+    //int auxSize=0;
+    int employeeCount=0;
+    int auxHoras, auxId, auxSueldo;
+    char auxNombre[50];
+
     if(pFile!=NULL && pArrayListEmployee!= NULL)
     {
         do
         {
-            pEmployee = employee_new();
-            fread(pEmployee,sizeof(Employee),1,pFile);
+            pxEmployee = employee_new();
+            //auxSize = sizeof(Employee);
+            //printf("Sixe : %d", auxSize);
+            fread(pxEmployee,sizeof(Employee),1,pFile);
+            //printf("empleado nº %d: ", con);
 
-            if(pEmployee!=NULL)
+            if(employee_getId(pxEmployee,&auxId)==0)
             {
-             ll_add(pArrayListEmployee,pEmployee);
-             auxReturn=0;
+                if(employee_getNombre(pxEmployee,auxNombre)==0)
+                {
+                    if(employee_getSueldo(pxEmployee,&auxSueldo)==0)
+                    {
+                        if(employee_getHorasTrabajadas(pxEmployee,&auxHoras)==0)
+                        {
+                            ll_add(pArrayListEmployee,pxEmployee);
+                            employeeCount++;
+                            auxReturn=0;
+                        }
+                    }
+                }
             }
             else
             {
-            auxReturn=-1;
-            break;
+                auxReturn=-1;
+                //printf("sale x break;");
+                break;
             }
         }while(!feof(pFile));
     }
     fclose(pFile);
     printf("\n////////////////////////\n");
     if(auxReturn==0)
+    {
         printf("CARGA DE DATOS EXITOSA.");
+        printf("\nSe cargaron %d empleados.", employeeCount);
+    }
     else
     {
         printf("CARGA DE DATOS FALLIDA.");

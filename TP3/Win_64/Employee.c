@@ -130,27 +130,52 @@ Employee* employee_new(){
 Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajadasStr, char* sueldoStr){
 
     Employee* this;
+    int flag=-1;
+    int auxId,auxHs,auxSalary;
+    char auxName[50];
 
     if (idStr != NULL && nombreStr != NULL && horasTrabajadasStr != NULL && sueldoStr != NULL)
     {
         this  = employee_new();
         if(this != NULL)
         {
-            if(employee_setId(this, atoi(idStr))==0)
+            if(isNumeric(idStr)==0)
             {
-                if(employee_setNombre(this, nombreStr)==0)
+                auxId = atoi(idStr);
+                flag = employee_setId(this, auxId);
+                //printf("id: %d", auxId);
+            }
+            if(flag==0)
+            {
+                if(isLetter(nombreStr)==0)
                 {
-                    if(employee_setHorasTrabajadas(this, atoi(horasTrabajadasStr))==0)
-                    {
-                        if(employee_setSueldo(this, atoi(sueldoStr))==0)
-                        {
-                            return this;
-                        }
-                    }
+                    strcpy(auxName, nombreStr);
+                    flag = employee_setNombre(this, auxName);
+                    //printf("\nNOMBRE: %s", auxName);
+                }
+            }
+            if(flag==0)
+            {
+                if(isOnlyNumber(horasTrabajadasStr)==0)
+                {
+                    auxHs = atoi(horasTrabajadasStr);
+                    flag = employee_setHorasTrabajadas(this, auxHs);
+                    //printf("horas: %d", auxHs);
+                }
+            }
+            if(flag==0)
+            {
+                if(isOnlyNumber(sueldoStr)==0)
+                {
+                    auxSalary = atoi(sueldoStr);
+                    flag = employee_setSueldo(this, auxSalary);
+                    //printf("sueldo: %d", auxSalary);
                 }
             }
         }
         else
+            printf("sale x This != NULL");
+        if(flag!=0)
         {
             free(this);
             this = NULL;
@@ -162,8 +187,8 @@ Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajad
 ////////////////////////////////////////////////////////////////////////////////// SORT Salary
 int employee_sortBySalary(void*arg1, void* arg2){
     int auxReturn=0;
-    Employee* p1;
-    Employee* p2;
+    Employee* p1=NULL;
+    Employee* p2=NULL;
 
     if(arg1!=NULL && arg2!=NULL)
     {
@@ -185,8 +210,8 @@ int employee_sortBySalary(void*arg1, void* arg2){
 ////////////////////////////////////////////////////////////////////////////////// SORT Hours
 int employee_sortByWorkedHours(void*arg1, void* arg2){
     int auxReturn=0;
-    Employee* p1;
-    Employee* p2;
+    Employee* p1=NULL;
+    Employee* p2=NULL;
 
     if(arg1!=NULL && arg2!=NULL)
     {
@@ -208,8 +233,8 @@ int employee_sortByWorkedHours(void*arg1, void* arg2){
 ////////////////////////////////////////////////////////////////////////////////// SORT Name
 int employee_sortByName(void*arg1, void* arg2){
     int auxReturn=0;
-    Employee* p1;
-    Employee* p2;
+    Employee* p1=NULL;
+    Employee* p2=NULL;
 
     if(arg1!=NULL && arg2!=NULL)
     {
