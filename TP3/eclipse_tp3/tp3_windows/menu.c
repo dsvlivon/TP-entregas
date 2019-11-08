@@ -7,10 +7,10 @@
 ********************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdio_ext.h>
+//#include <stdio_ext.h>
 #include <string.h>
 #include <stdio.h>
-#include <stdlib.h  >
+#include <stdlib.h>
 #include "menu.h"
 #include "LinkedList.h"
 #include "Controller.h"
@@ -29,7 +29,7 @@ int menu()
     LinkedList* pArrayListEmployee = ll_newLinkedList();
     ///////////////////////////////
     do{
-        //system ("cls");
+    	system ("cls");
         printf("        BIENVENIDOS A  U.T.N. F.R.A. \n\n");
         printf("\n1) Cargar los datos de los empleados desde el archivo data.csv (modo texto)."
                "\n2) Cargar los datos de los empleados desde el archivo data.bin (modo binario)."
@@ -47,8 +47,8 @@ int menu()
         {
             option = atoi(aux);
         }
-        //fflush(stdin); //para windows
-        __fpurge(stdin); //para Linux
+        fflush(stdin); //para windows
+        //__fpurge(stdin); //para Linux
         switch(option)
         {
             case 1://printf("En proceso... ");
@@ -147,7 +147,7 @@ int menu()
             default: printf("Opcion invalida\n");
             break;
         }
-        //system("pause");
+        system("pause");
     }while (option !=10);
     return auxReturn;
 }

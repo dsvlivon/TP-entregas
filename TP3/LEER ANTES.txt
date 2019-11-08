@@ -1,0 +1,15 @@
+Saludos.
+
+
+Explico brevemente. El proyecto esta armado y funcionando en CodeBlocks, lo arme tambien en Ecplise pero no lo pudo ni compilar.
+Intenté varias soluciones al "cannot run program make: launching file". Probé varias posibles soluciones que en StackOverflow y otros foros,
+pero no puedo perder mas tiempo. 
+
+Soy consciente que la catedra pide la implementación de Eclipse, pero si lo importante es aprender a programar, me las arreglo con un IDE mas 
+viejo para sacar el codigo andando. 
+
+En teoría el archivo que esta armado para eclipse debería funcionar, solo que yo no lo puedo comprobar. 
+
+Desde ya disculpas y muchas gracias.
+
+Daniel S.Vizgarra Livón. 1°E. 

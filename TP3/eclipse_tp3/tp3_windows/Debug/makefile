@@ -28,7 +28,7 @@ all: TP3
 TP3: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "TP3" $(OBJS) $(USER_OBJS) $(LIBS) /home/agustin/UTN/TP/tp_laboratorio_1/TP3/LinkedList.a
+	gcc  -o "TP3" $(OBJS) $(USER_OBJS) $(LIBS) C:\Users\Daniel\Documents\DANY\UTN\Programacion_1\Trabajos_Practicos\anteriores\TP3\eclipse_tp3\tp3_windows/LinkedList.a
 	@echo 'Finished building target: $@'
 	@echo ' '
 

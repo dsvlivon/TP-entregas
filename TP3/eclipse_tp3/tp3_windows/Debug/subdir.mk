@@ -6,26 +6,26 @@
 C_SRCS += \
 ../Controller.c \
 ../Employee.c \
-../Inputs.c \
-../Validaciones.c \
 ../main.c \
-../parser.c 
+../menu.c \
+../parser.c \
+../validations.c 
 
 OBJS += \
 ./Controller.o \
 ./Employee.o \
-./Inputs.o \
-./Validaciones.o \
 ./main.o \
-./parser.o 
+./menu.o \
+./parser.o \
+./validations.o 
 
 C_DEPS += \
 ./Controller.d \
 ./Employee.d \
-./Inputs.d \
-./Validaciones.d \
 ./main.d \
-./parser.d 
+./menu.d \
+./parser.d \
+./validations.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

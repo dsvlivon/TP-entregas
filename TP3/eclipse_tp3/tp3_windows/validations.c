@@ -7,7 +7,7 @@
 ********************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdio_ext.h>
+//#include <stdio_ext.h>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -31,8 +31,8 @@ int getInput(char *pResult, char *pMsg, char *pMsgFail, int min, int max, int tr
 		for(j=0;j<try;j++)
 		{
             printf("%s", pMsg);
-            //fflush(stdin);//  para Windows
-            __fpurge(stdin);// para Linux
+            fflush(stdin);//  para Windows
+            //__fpurge(stdin);// para Linux
             fgets (input, sizeof(input), stdin);
             input[strlen(input)-1]='\0';
             switch (mode)
