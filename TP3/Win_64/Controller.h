@@ -75,4 +75,11 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee);
  * \return int
  */
 int controller_findEmployeeById(LinkedList* pArrayListEmployee, int id);
+////////////////////////////////////////////////////////////////////////////////// FIND ID
+/** \brief Elimina la lista de la memoria
+ * \param pArrayListEmployee LinkedList*
+ * \return int
+ */
+int controller_deleteLinkedList(LinkedList* pArrayListEmployee);
+
 

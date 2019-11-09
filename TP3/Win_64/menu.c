@@ -52,16 +52,12 @@ int menu()
         switch(option)
         {
             case 1://printf("En proceso... ");
-                 if(flag==1)
+                if(flag==1)
                 {
                     printf("\n//////////////////////////////////////////////\n");
                     printf("////////////////    ALERTA     ///////////////");
                     printf("\n//////////////////////////////////////////////\n");
-                    printf("\nYa se cargo una base de datos.En caso de continuar se duplicaran los datos.\n");
-                    if(getInput(aux, "\nConfirma la carga? Y/N: ","\nLa Carga no se realizo.",0,2,1,5)==0)
-                    {
-                        controller_loadFromText("data.csv", pArrayListEmployee);
-                    }
+                    printf("\n///////YA SE CARGO UNA BASE DE DATOS//////////\n");
                 }
                 else
                     controller_loadFromText("data.csv", pArrayListEmployee);
@@ -73,10 +69,13 @@ int menu()
                     printf("\n//////////////////////////////////////////////\n");
                     printf("////////////////    ALERTA     ///////////////");
                     printf("\n//////////////////////////////////////////////\n");
-                    printf("\nYa se cargo una base de datos. En caso de continuar se duplicaran los datos.");
-                    if(getInput(aux, "\nConfirma la carga? Y/N: ","\nLa Carga no se realizo.",0,2,1,5)==0)
+                    printf("\n///////YA SE CARGO UNA BASE DE DATOS//////////\n");
+                    if(getInput(aux, "\n\nDesea borrar la base de datos actual? Y/N: ","\nLa Baja no se realizo.",0,2,1,5)==0)
                     {
-                        controller_loadFromBinary("data2.bin",pArrayListEmployee);
+                        controller_deleteLinkedList(pArrayListEmployee);
+                        if(getInput(aux, "\n\nDesea carga una nueva base de datos? Y/N: ","\nLa Carga no se realizo.",0,2,1,5)==0)                        {
+                            controller_loadFromBinary("data2.bin",pArrayListEmployee);
+                        }
                     }
                 }
                 else

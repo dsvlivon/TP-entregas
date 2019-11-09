@@ -216,6 +216,19 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee){
 
     return auxReturn;
 }
+////////////////////////////////////////////////////////////////////////////////// DELETE LL
+int controller_deleteLinkedList(LinkedList* pArrayListEmployee){
+    int auxReturn=-1;
+    //Employee* pxEmployee=NULL;
+
+    if(pArrayListEmployee != NULL)
+    {
+        ll_clear(pArrayListEmployee);
+        printf("\n////////SE ELIMINO LA BASE DE DATOS///////////\n");
+        auxReturn=0;
+    }
+    return auxReturn;
+}
 ////////////////////////////////////////////////////////////////////////////////// LIST
 int controller_listEmployee(LinkedList* pArrayListEmployee){
     int auxReturn=-1;
@@ -299,7 +312,7 @@ int controller_saveAsText(char* path , LinkedList* pArrayListEmployee){
         if(pFileTxt != NULL)
         {
             xLen = ll_len(pArrayListEmployee);
-            for(i=0; i<ll_len(pArrayListEmployee);i++)
+            for(i=0; i<xLen;i++)
             {
                 pxEmployee = ll_get(pArrayListEmployee,i);
                 //fwrite(pe, sizeof(Employee),1,pFileTxt);
@@ -369,7 +382,7 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee){
         if(auxReturn==0)
         {
             printf("EL ARCHIVO SE GUARDO CON EXITO.");
-            printf("\nSe guardaron : %d empleados.", xLen);
+            //printf("\nSe guardaron : %d empleados.", xLen);
         }
         else
         {

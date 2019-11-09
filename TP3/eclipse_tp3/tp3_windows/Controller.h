@@ -3,7 +3,7 @@
 *Objetivo: Esqueleto para ABM utilizando punteros y linkedList
 *Version: 1.0 del 1 de Noviembre de 2019
 *Autor:Daniel S.Vizgarra Livon
-*Curso:1Â°E T.N.
+*Curso:1°E T.N.
 ********************************************************************/
 ////////////////////////////////////////////////////////////////////////////////// LOAD CSV
 /** \brief Carga los datos de los empleados desde el archivo data.csv (modo texto).
@@ -75,4 +75,11 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee);
  * \return int
  */
 int controller_findEmployeeById(LinkedList* pArrayListEmployee, int id);
+////////////////////////////////////////////////////////////////////////////////// FIND ID
+/** \brief Elimina la lista de la memoria
+ * \param pArrayListEmployee LinkedList*
+ * \return int
+ */
+int controller_deleteLinkedList(LinkedList* pArrayListEmployee);
+
 

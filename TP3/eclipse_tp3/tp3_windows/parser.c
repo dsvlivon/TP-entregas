@@ -48,7 +48,7 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee){
     if(auxReturn==0)
     {
         printf("CARGA DE DATOS EXITOSA.");
-        printf("\nSe cargaron %d empleados.", employeeCount);
+        //printf("\nSe cargaron %d empleados.", employeeCount);
     }
 
     else
@@ -105,7 +105,7 @@ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee){
     if(auxReturn==0)
     {
         printf("CARGA DE DATOS EXITOSA.");
-        printf("\nSe cargaron %d empleados.", employeeCount);
+        //printf("\nSe cargaron %d empleados.", employeeCount);
     }
     else
     {
