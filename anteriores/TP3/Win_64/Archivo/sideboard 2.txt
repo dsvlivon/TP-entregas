@@ -1,0 +1,45 @@
+  /* int i,e;
+    LinkedList* listaEmpleados = ll_newLinkedList();
+
+    
+
+
+    // Muestro la cantida de elementos dentro de la lista ----> 0
+    printf("Cantidad elementos: %d\n", ll_len(listaEmpleados));
+    // agrego un empleado a la lista
+    if(ll_add(listaEmpleados, emp1)== 0)
+
+    {
+        printf("Se ha agregado el empleado con exito a la lista\n");
+    }
+    printf("Cantidad elementos: %d\n", ll_len(listaEmpleados));
+    if(ll_add(listaEmpleados, emp2)== 0)
+    {
+        printf("Se ha agregado el empleado con exito a la lista\n");
+    }
+    printf("Cantidad elementos: %d\n", ll_len(listaEmpleados));
+    if(ll_add(listaEmpleados, emp3)== 0)
+    {
+        printf("Se ha agregado el empleado con exito a la lista\n");
+    }
+    printf("Cantidad elementos: %d\n", ll_len(listaEmpleados));
+    mostrarEmpleado( (Employee*) ll_get(listaEmpleados,1));
+    if(ll_push(listaEmpleados, 1, emp4)== 0)
+    {
+        printf("Se ha agregado el empleado con exito a la lista\n");
+    }
+    printf("Cantidad elementos: %d\n", ll_len(listaEmpleados));
+    mostrarEmpleado( (Employee*) ll_get(listaEmpleados,1));
+    mostrarEmpleado( (Employee*) ll_get(listaEmpleados,2));
+    printf("----------------------------------------------\n\n");
+    for(i = 0; i < ll_len(listaEmpleados); i++)
+    {
+      mostrarEmpleado( (Employee*) ll_get(listaEmpleados,i));
+    }
+    printf("Ordeno la lista por sueldo\n\n");
+    ll_sort(listaEmpleados,ordenarXHoras, 0);
+    for(e = 0; i < ll_len(listaEmpleados); e++)
+    {
+        printf("???");
+    }
+    */
