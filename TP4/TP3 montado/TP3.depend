@@ -1,0 +1,547 @@
+# depslib dependency file v1.0
+1533062952 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/Employee.c
+
+1533063050 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1532354323 /home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/LinkedList.h
+
+1533062926 /home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/Employee.h
+
+1533063080 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533062952 source:/home/mauro/Descargas/TP3/Linux_64/Employee.c
+
+1533066103 source:/home/mauro/Descargas/TP3/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1532354323 /home/mauro/Descargas/TP3/Linux_64/LinkedList.h
+
+1533066103 /home/mauro/Descargas/TP3/Linux_64/Employee.h
+
+1533063080 source:/home/mauro/Descargas/TP3/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533145792 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533118898 /home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/LinkedList.h
+
+1533118898 /home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Employee.h
+
+1533118898 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Employee.c
+
+1533145890 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533133026 source:c:\users\alumno\desktop\tp3\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533133022 c:\users\alumno\desktop\tp3\win_64\linkedlist.h
+
+1559611357 c:\users\alumno\desktop\tp3\win_64\employee.h
+
+1559611368 source:c:\users\alumno\desktop\tp3\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1533133022 c:\users\alumno\desktop\tp3\win_64\controller.h
+
+1533133022 source:c:\users\alumno\desktop\tp3\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1559611357 source:c:\users\alumno\desktop\tp3\win_64\employee.c
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+
+1572541696 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"LinkedList.h"
+	"parser.h"
+	"Controller.h"
+	"Employee.h"
+
+1572465043 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\linkedlist.h
+
+1572546066 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\employee.h
+
+1572546066 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"Employee.h"
+	"validations.h"
+
+1572546019 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1572445730 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1572534575 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\menu.h
+
+1572538719 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+
+1572538626 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\validations.h
+
+1572457095 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"LinkedList.h"
+	"Employee.h"
+
+1572541711 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"menu.h"
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1572534054 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\controller.h
+
+1572534077 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp3\win_64\parser.h
+
+1572569386 source:d:\documentos\trabajos_practicos\tp3\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"LinkedList.h"
+	"parser.h"
+	"Controller.h"
+	"Employee.h"
+
+1572557978 d:\documentos\trabajos_practicos\tp3\win_64\linkedlist.h
+
+1572557978 d:\documentos\trabajos_practicos\tp3\win_64\parser.h
+
+1572557978 d:\documentos\trabajos_practicos\tp3\win_64\controller.h
+
+1572565988 d:\documentos\trabajos_practicos\tp3\win_64\employee.h
+
+1572566194 source:d:\documentos\trabajos_practicos\tp3\win_64\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"Employee.h"
+	"validations.h"
+
+1572557978 d:\documentos\trabajos_practicos\tp3\win_64\validations.h
+
+1572557978 source:d:\documentos\trabajos_practicos\tp3\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1572557978 d:\documentos\trabajos_practicos\tp3\win_64\menu.h
+
+1572569201 source:d:\documentos\trabajos_practicos\tp3\win_64\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"menu.h"
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1572567142 source:d:\documentos\trabajos_practicos\tp3\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1572557978 source:d:\documentos\trabajos_practicos\tp3\win_64\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+
+1572557980 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1572557980 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\menu.h
+
+1572557980 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+
+1572557980 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\validations.h
+
+1573258244 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1572881160 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\linkedlist.h
+
+1573258119 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\employee.h
+
+1572557980 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\parser.h
+
+1573258398 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"LinkedList.h"
+	"parser.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1573255270 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\controller.h
+
+1573258146 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"menu.h"
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1573258110 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp3\win_64\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"Employee.h"
+	"validations.h"
+
+1572557980 source:d:\documentos\tp3\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1572557980 d:\documentos\tp3\win_64\menu.h
+
+1572878426 source:d:\documentos\tp3\win_64\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"menu.h"
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1572881160 d:\documentos\tp3\win_64\linkedlist.h
+
+1572875214 d:\documentos\tp3\win_64\controller.h
+
+1572873190 d:\documentos\tp3\win_64\employee.h
+
+1572557980 d:\documentos\tp3\win_64\validations.h
+
+1572557980 source:d:\documentos\tp3\win_64\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+
+1573084259 source:d:\documentos\tp3\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"LinkedList.h"
+	"parser.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1572557980 d:\documentos\tp3\win_64\parser.h
+
+1573079845 source:d:\documentos\tp3\win_64\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"Employee.h"
+	"validations.h"
+
+1573086093 source:d:\documentos\tp3\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1573088272 source:c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"LinkedList.h"
+	"parser.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1572881160 c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\linkedlist.h
+
+1572557980 c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\parser.h
+
+1572875214 c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\controller.h
+
+1572873190 c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\employee.h
+
+1572557980 c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\validations.h
+
+1572557980 source:c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1572557980 c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\menu.h
+
+1572878426 source:c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"menu.h"
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1573086094 source:c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1572557980 source:c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+
+1573130791 source:c:\users\daniel\desktop\trabajos_practicos\tp3\win_64\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"Employee.h"
+	"validations.h"
+
+1573258398 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"LinkedList.h"
+	"parser.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1573932131 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\linkedlist.h
+
+1572557980 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\parser.h
+
+1573258811 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\controller.h
+
+1573258119 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\employee.h
+
+1572557980 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\validations.h
+
+1573258110 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"Employee.h"
+	"validations.h"
+
+1572557980 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1572557980 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\menu.h
+
+1573258146 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"menu.h"
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1573258244 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1572557980 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\win_64\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+
+1573258398 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"LinkedList.h"
+	"parser.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1573932131 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\linkedlist.h
+
+1572557980 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\parser.h
+
+1573258811 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\controller.h
+
+1573258119 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\employee.h
+
+1572557980 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\validations.h
+
+1573258110 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"Employee.h"
+	"validations.h"
+
+1572557980 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1572557980 c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\menu.h
+
+1573258146 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h  >
+	"menu.h"
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validations.h"
+
+1573258244 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1572557980 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos_practicos\tp4\tp3 montado\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+
